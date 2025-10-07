@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparsh Portfolio</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">SPARSH</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Sparsh</span></h1>
+      <p>I am a passionate beginner in frontend development, learning HTML, CSS, and JavaScript to create beautiful web experiences.</p>
+      <a href="#contact" class="btn primary">Hire Me</a>
+      <a href="#about" class="btn rainbow-hover">Know More</a>
+    </div>
+    <div class="hero-img">
+      <img src="C:\Users\HP\Desktop\dev2\my ps\Portfolio-master\assets\img\5739a063-8eea-4642-b9c4-c6489319323e.png" alt="Sparsh Photo">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I'm Sparsh Sahu, a passionate first-year Computer Science student at Kanpur University, currently diving deep into the world of Full-Stack Web Development.
+
+      My journey began with curiosity—how websites work, how beautiful designs meet functionality, and how tech can impact real lives. I started with HTML and CSS, and now I’m expanding my skills in JavaScript, and planning to master React, Node.js, and MongoDB soon.
+
+      I believe in learning by doing—which is why I love building small but meaningful projects that challenge my creativity and logic. My aim is to become a well-rounded developer who not only builds for the web but also solves real-world problems through clean, user-friendly, and scalable digital products.
+
+      Apart from coding, I enjoy reading about emerging tech trends, experimenting with UI design ideas, and exploring open-source projects on GitHub.
+
+      This portfolio is a reflection of my learning journey. Whether you're a recruiter, developer, or fellow learner — let’s connect and grow together!
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A modern and responsive personal portfolio built using HTML and CSS only.</p>
+      </div>
+      <div class="project-card">
+        <h3>Netflix Clone</h3>
+        <p>Fully responsive Netflix homepage clone using HTML & CSS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Netflix Signup Page</h3>
+        <p>Stylish and functional signup form page designed to match Netflix branding.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Latest Blog</h2>
+    <div class="blog-card" style="margin: 0 auto; max-width: 700px;">
+      <h3>Why I Started Web Development</h3>
+      <p>As a tech enthusiast, I began web development to combine creativity and logic. It’s empowering to build ideas from scratch. Here’s how I started...</p>
+      <a href="#" class="btn outline">Read More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn outline">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a  class="git" chref="https://github.com/sahusparsh" target="_blank"><i class="fab fa-github"></i></a>
+      <a class="link" href="https://www.linkedin.com/in/sparsh-sahu-850915295/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="insta" href="https://www.instagram.com/sparshsahu8" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Sparsh. All rights reserved.</p>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
